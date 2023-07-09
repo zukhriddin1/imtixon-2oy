@@ -46,6 +46,7 @@ await data?.forEach((item) => {
   }
 });
 
-app.listen(5432, () => {
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
   console.log("server is running...");
 });
