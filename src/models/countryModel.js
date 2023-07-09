@@ -47,5 +47,5 @@ const Country = db.define("country", {
     allowNull: true,
   },
 });
-await Country.sync({ force: true });
+await Country.sync();
 export default Country;
